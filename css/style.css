@@ -52,6 +52,7 @@ a {
 .btn {
   width: 260px;
   height: 54px;
+  margin-top: 50px;
   font-size: 24px;
   color: #ffffff;
   background-color: #77b53c;
@@ -59,8 +60,31 @@ a {
   border: none;
 }
 
+.slider-dots {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.dot {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 10px 0;
+  background-color: #1278ba;
+  border-radius: 50%;
+}
+
+.dot-active {
+  background-color: #2f373f;
+  height: 18px;
+  width: 18px;
+}
+
 .slider {
-  background: url(../img/bg1.jpg) center no-repeat/cover;
+  position: relative;
 }
 
 .slider__item-two {
@@ -68,6 +92,7 @@ a {
 }
 
 .slider__item-one {
+  background: url(../img/bg1.jpg) center no-repeat/cover;
   padding-top: 73px;
   padding-bottom: 70px;
   color: #ffffff;
@@ -153,7 +178,7 @@ a {
 
 .slider__item-one .title {
   max-width: 783px;
-  margin: 60px auto;
+  margin: 80px auto;
   font-size: 45px;
   font-weight: 400;
 }
@@ -200,7 +225,7 @@ a {
 }
 
 .bonuses .header__logo {
-  margin-bottom: 123px;
+  margin-bottom: 90px;
   font-size: 32px;
 }
 
@@ -210,7 +235,7 @@ a {
 }
 
 .bonuses__title {
-  margin-bottom: 143px;
+  margin-bottom: 100px;
   color: #333333;
   font-size: 35px;
   font-weight: 700;
@@ -239,6 +264,7 @@ a {
 
 .bonuses-wrap-tabs__item {
   position: absolute;
+  width: 100%;
   top: 116%;
   left: 0;
   padding: 30px;
